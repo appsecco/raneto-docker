@@ -12,12 +12,13 @@ More details about the project can be [found here](http://docs.raneto.com/)
 
 The simple and quick way to use this container is as follows.
 
-**Softwares required to use docker container**
+**Software required to use docker container**
 
 - Docker (Tested version 1.13.0)
 
 **Steps to use container**
-- Pull the `Raneto` image from the docker hub
+
+- Pull the [Raneto](https://hub.docker.com/r/appsecco/raneto) image from the docker hub
 
 ```
 docker pull appsecco/raneto
@@ -33,7 +34,10 @@ docker run -v `pwd`/content/:/data/content/ -v `pwd`/config/config.default.js:/o
 
 - Then navigate to [http://localhost:3000](http://localhost:3000)
 
-- If you want to add more content to the Knowledgebase. Just add your directories and markdown files to the `content` folder in host system. It will update automatically
+- If you want to add more content to the Knowledgebase. Just add your directories (or) markdown files to the `content` folder in host system. It will update automatically
+
+
+---
 
 
 Please feel free to make a pull request or tweet to me [@madhuakula](https://twitter.com/madhuakula) for improvements and suggestions
