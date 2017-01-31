@@ -24,6 +24,14 @@ The simple and quick way to use this container is as follows.
 docker pull appsecco/raneto
 ```
 
+- Clone the repostiory for sample configuration and content
+
+```
+git clone https://github.com/appsecco/raneto-docker.git
+
+cd raneto-docker
+```
+
 - Make changes for configuration if required in `config/config.default.js`
 
 - Then you are ready to run the Knowledgebase
