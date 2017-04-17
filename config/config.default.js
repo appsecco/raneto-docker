@@ -75,7 +75,7 @@ var config = {
     }
   ],
 
-  locale: 'pt-br',
+  locale: 'en',
 
   // Set to true to render suitable layout for RTL languages
   rtl_layout: false,
