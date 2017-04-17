@@ -6,7 +6,7 @@ var config = {
   site_title: 'Hero99',
 
   // The base URL of your site (can use %base_url% in Markdown files)
-  base_url: 'http://hero99.com.br',
+  base_url: '',
 
   // Used for the "Get in touch" page footer link
   support_email: 'dev@hero99.com.br',
