@@ -3,16 +3,16 @@
 var config = {
 
   // Your site title (format: page_title - site_title)
-  site_title: 'Sample Raneto Docs',
+  site_title: 'Hero99',
 
   // The base URL of your site (can use %base_url% in Markdown files)
-  base_url: '',
+  base_url: 'http://hero99.com.br',
 
   // Used for the "Get in touch" page footer link
-  support_email: 'madhu@appsecco.com',
+  support_email: 'dev@hero99.com.br',
 
   // Footer Text / Copyright
-  copyright: 'Copyright &copy; '+ new Date().getFullYear() +' - <a href="http://raneto.com">Powered by Raneto</a>',
+  copyright: 'Copyright &copy; '+ new Date().getFullYear() +' - <a href="http://hero99.com.br">Powered by Hero99</a>',
 
   // Excerpt length (used in search)
   excerpt_length: 400,
@@ -75,7 +75,7 @@ var config = {
     }
   ],
 
-  locale: 'en',
+  locale: 'pt-br',
 
   // Set to true to render suitable layout for RTL languages
   rtl_layout: false,
