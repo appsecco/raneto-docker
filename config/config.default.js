@@ -46,7 +46,7 @@ var config = {
   analytics: '',
 
   // Set to true to enable the web editor
-  allow_editing : true,
+  allow_editing : false,
 
   // Set to true to enable HTTP Basic Authentication
   authentication : false,
