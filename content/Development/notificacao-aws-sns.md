@@ -81,9 +81,9 @@ Para entender um pouco melhor o fluxo de cadastro segue um exemplo de código.
 
         // baseado na plataforma que é o device definimos nossa Application e o ID dela.
         if ($platform == Device::IOS) {
-            $application = "arn:aws:sns:sa-east-1:627040845552:app/APNS/ProjetcLiveProd";
+            $application = "arn:aws:sns:sa-east-1:000000000000:app/APNS/Aplication";
         } else {
-            $application = "arn:aws:sns:sa-east-1:627040845552:app/GCM/ProjectLiveAndroid";
+            $application = "arn:aws:sns:sa-east-1:000000000000:app/GCM/Aplication";
         }
 
         // Criamos nosso endPoint junto a aws
@@ -99,7 +99,7 @@ Para entender um pouco melhor o fluxo de cadastro segue um exemplo de código.
 
             // Fazemos o subscribe no Topic que criamos para nossos usuários.
             $sns->subscribe(array(
-                'TopicArn' => "arn:aws:sns:sa-east-1:627040845552:project-live",
+                'TopicArn' => "arn:aws:sns:sa-east-1:000000000000:topic",
                 'Protocol' => 'application',
                 'Endpoint' => $endPoint['EndpointArn'],
             ));
