@@ -84,7 +84,7 @@ Biblioteca para analise topográfica, foi usada em AgroPro para calcular a inter
 
 **D3**
 Biblioteca para criação de elementos Canvas/SVG, utilizada em AgroPro para criação de Marcadores dinâmicos.
-- [D3](https://github.com/bjornharrtell/jsts)https://d3js.org/)
+- [D3](https://github.com/bjornharrtell/jsts)
 
 **WillyLoman**
 Biblioteca para cálculo do TSP (Traveller Salesman Problem), utilizada em AgroPro para definição do menor caminho para o produtor percorrer.
