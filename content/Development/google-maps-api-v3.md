@@ -1,4 +1,3 @@
-# Google Maps API v3
 Sobre boas maneiras para se trablhar com Google Maps API v3, com base nos conhecimento aprendidos no projeto AgroPro.
 
 ###### Entendendo o Maps
@@ -74,3 +73,20 @@ map.data.add({geometry: new google.maps.Data.Polygon([outerCoords,
                                                       innerCoords1,
                                                       innerCoords2])})
 ```
+
+###### Libs para de trabalhar com o Maps.
+
+**JSTS**
+Biblioteca para analise topográfica, foi usada em AgroPro para calcular a interseção entre quadrantes nas fazendas.
+
+- [JSTS](https://github.com/bjornharrtell/jsts)
+- [FORUM](https://groups.google.com/forum/#!forum/jsts-devs)
+
+**D3**
+Biblioteca para criação de elementos Canvas/SVG, utilizada em AgroPro para criação de Marcadores dinâmicos.
+- [D3](https://github.com/bjornharrtell/jsts)https://d3js.org/)
+
+**WillyLoman**
+Biblioteca para cálculo do TSP (Traveller Salesman Problem), utilizada em AgroPro para definição do menor caminho para o produtor percorrer.
+A biblioteca apresenta várias soluções para esse problema como por exemplo Dynamic Programming ou Genetic Algorithm. Em AgroPro, foi utilizado a opção Best Improvement, pois tinha um tempo de resposta superior as outras, embora seu indíce de acerto seja cerca de 20% menor.
+- [WillyLoman](https://github.com/corbos/WillyLoman)
