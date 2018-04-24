@@ -45,6 +45,14 @@ docker run -v `pwd`/content/:/data/content/ -v `pwd`/config/config.default.js:/o
 - If you want to add more content to the Knowledgebase. Just add your directories (or) markdown files to the `content` folder in host system. It will update automatically
 
 
+**Note**
+
+- To add custom theme, we have to mount the folder inside container and update configuration file. For example `theme` folder in current working directory
+
+```
+docker run -v `pwd`/content/:/data/content/ -v `pwd`/config/config.default.js:/opt/raneto/example/config.default.js -v `pwd`/theme/:/data/theme/ -p 3000:3000 -d appsecco/raneto
+```
+
 ---
 
 
