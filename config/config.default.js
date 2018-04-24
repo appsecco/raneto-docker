@@ -1,5 +1,8 @@
 'use strict';
 
+// Modules
+var path = require('path');
+
 var config = {
 
   // Your site title (format: page_title - site_title)
@@ -12,7 +15,7 @@ var config = {
   support_email: 'madhu@appsecco.com',
 
   // Footer Text / Copyright
-  copyright: 'Copyright &copy; '+ new Date().getFullYear() +' - <a href="http://raneto.com">Powered by Raneto</a>',
+  copyright: 'Copyright &copy; ' + new Date().getFullYear() + ' - <a href="http://raneto.com">Powered by Raneto</a>',
 
   // Excerpt length (used in search)
   excerpt_length: 400,
@@ -25,8 +28,12 @@ var config = {
   // If true category folders need to contain a "sort" file with an integer value
   category_sort: true,
 
+  // Controls behavior of home page if meta ShowOnHome is not present. If set to true
+  // all categories or files that do not specify ShowOnHome meta property will be shown
+  show_on_home_default: true,
+
   // Which Theme to Use?
-  theme_dir  : __dirname + '/../themes/',
+  theme_dir  : path.join(__dirname, '..', 'themes'),
   theme_name : 'default',
 
   // Specify the path of your content folder where all your '.md' files are located
@@ -35,7 +42,7 @@ var config = {
   content_dir : '/data/content/',
 
   // Where is the public directory or document root?
-  public_dir  : __dirname + '/../themes/default/public/',
+  public_dir  : path.join(__dirname, '..', 'themes', 'default', 'public'),
 
   // The base URL of your images folder,
   // Relative to config.public_dir
@@ -46,13 +53,16 @@ var config = {
   analytics: '',
 
   // Set to true to enable the web editor
-  allow_editing : false,
+  allow_editing : true,
 
   // Set to true to enable HTTP Basic Authentication
-  authentication : false,
+  authentication : true,
 
   // If editing is enabled, set this to true to only authenticate for editing, not for viewing
-  authentication_for_edit: false,
+  authentication_for_edit: true,
+
+  // If authentication is enabled, set this to true to enable authentication for reading too
+  authentication_for_read: false,
 
   // Google OAuth
   googleoauth: false,
@@ -77,29 +87,36 @@ var config = {
 
   locale: 'en',
 
+  // Support search with extra languages
+  searchExtraLanguages: ['ru'],
+
+  // Sets the format for datetime's
+  datetime_format: 'Do MMM YYYY',
+
   // Set to true to render suitable layout for RTL languages
   rtl_layout: false,
 
   // Edit Home Page title, description, etc.
   home_meta : {
-    //title       : 'Custom Home Title',
-    //description : 'Custom Home Description'
+    // title       : 'Custom Home Title',
+    // description : 'Custom Home Description'
   },
 
-  //variables: [
-  //  {
-  //    name: 'test_variable',
-  //    content: 'test variable'
-  //  },
-  //  {
-  //    name: 'test_variable_2',
-  //    content: 'test variable 2'
-  //  }
-  //]
+  // variables: [
+  //   {
+  //     name: 'test_variable',
+  //     content: 'test variable'
+  //   },
+  //   {
+  //     name: 'test_variable_2',
+  //     content: 'test variable 2'
+  //   }
+  // ]
 
   table_of_contents: false
 
 };
+config.public_dir = path.join(__dirname, '..', 'themes', config.theme_name, 'public');
 
 // Exports
-module.exports = config;
+module.exports = config;  
