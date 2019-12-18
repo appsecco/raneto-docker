@@ -6,7 +6,7 @@ FROM node:slim
 MAINTAINER Madhu Akula <madhu@appsecco.com>
 
 # Change the raneto version based on version you want to use
-ENV RANETO_VERSION 0.16.0
+ENV RANETO_VERSION 0.16.4
 ENV RANETO_INSTALL_DIR /opt/raneto
 
 # Get Raneto from sources
